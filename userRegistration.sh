@@ -8,3 +8,17 @@ else
         echo "Invalid FirstName"
 fi
 
+# LastName Varification
+pat="^([A-Z]{1})[A-Za-z]{2,}$"
+read -p " Enter FirstName" Lastname
+if [[ $Lastname =~ $pat ]]
+then
+        echo "Valid Lastname"
+else
+        echo "Invalid LastName"
+fi
+
+
+
+
+
