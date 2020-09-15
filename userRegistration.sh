@@ -26,6 +26,16 @@ then
 else
     echo "Email address $email is invalid."
 fi
+# PhoneNumber Varified
+pat="^(9?1?)[]?[0-9]*{10}$"
+read -p " Enter phonenumber" phoneNumber
+if [[ $phoneNumber =~ $pat ]]
+then
+        echo "Valid phonenumber"
+else
+        echo "Invalid phonenumber"
+fi
+
 
 
 
