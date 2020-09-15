@@ -17,6 +17,16 @@ then
 else
         echo "Invalid LastName"
 fi
+# Email Address Varified
+emailPat="^[A-Za-z0-9]+([._+-][0-9a-zA-Z]+)*@[A-Za-z0-9]+\.[A-Za-z]{2,4}([.][a-zA-Z]{2})$"
+read -p "email" email
+if [[ $email =~ $emailPat ]]
+then
+    echo "Email address $email is valid."
+else
+    echo "Email address $email is invalid."
+fi
+
 
 
 
